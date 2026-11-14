@@ -1,4 +1,3 @@
-
 class Player:
     #constructor 
     def __init__(self, player_id, name, role, franchise, credits):
