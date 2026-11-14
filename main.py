@@ -50,8 +50,7 @@ class FantasyTeam:
         return f"{self.team_name}(owner: {self.owner},{size} player, {cost} cr)"
 
 
-team = FantasyTeam("Dugout Demo XI", "Tauseef")
-
+team = FantasyTeam("Tauseef's Dugout XI", "Tauseef")
 
 babar = Player("P089", "Babar Azam", "BAT", "Peshawar Zalmi", 10.5)
 rizwan = Player("P122", "Mohammad Rizwan", "WK", "Rawalpindiz", 10.5)
