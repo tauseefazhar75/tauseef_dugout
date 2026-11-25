@@ -31,6 +31,15 @@ class FantasyTeam:
             counts[player.role] = counts[player.role] + 1
         return counts
 
+    def set_captain(self, captain, vice_captain):
+        self.captain = captain
+        self.vice_captain = vice_captain
+
+    def __str__(self):
+        size = len(self.players)
+        cost = self.total_credits()
+        return f"{self.team_name} (owner: {self.owner}, {size} players, {cost} cr)"
+
     def __str__(self):
         return f"{self.name} ({self.franchise}, {self.role}, {self.credits} cr)"
 
