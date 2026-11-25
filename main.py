@@ -7,6 +7,18 @@ class Player:
         self.franchise = franchise
         self.credits = credits
 
+class FantasyTeam:
+    """A fantasy XI picked by one person."""
+    def __init__(self, team_name, owner):
+        self.team_name = team_name
+        self.owner = owner
+        self.player = []
+        self.captain = None
+        self.vice_captain = None
+
+    def add_player(self, player):
+        self.player.append(player)
+
     def __str__(self):
         return f"{self.name} ({self.franchise}, {self.role}, {self.credits} cr)"
 
