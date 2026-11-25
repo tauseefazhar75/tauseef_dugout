@@ -12,12 +12,18 @@ class FantasyTeam:
     def __init__(self, team_name, owner):
         self.team_name = team_name
         self.owner = owner
-        self.player = []
+        self.players = []
         self.captain = None
         self.vice_captain = None
 
     def add_player(self, player):
-        self.player.append(player)
+        self.players.append(player)
+
+    def total_credits(self):
+        total = 0
+        for player in self.players:
+            total = total + player.credits
+        return total
 
     def __str__(self):
         return f"{self.name} ({self.franchise}, {self.role}, {self.credits} cr)"
